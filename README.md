@@ -27,6 +27,12 @@ The site deploys automatically to Netlify via GitHub Actions (`.github/workflows
 - **Push to `main`** → deploys to production
 - **Open a PR** → Netlify builds a preview URL and posts it as a comment on the PR
 
+The production URL is posted in the GitHub Actions deploy step output (click the workflow run → `Deploy to Netlify` step to find the URL).
+
+## Link checking
+
+A link checker runs automatically on every push to `main` and every Monday at 8am UTC (`.github/workflows/check-links.yml`). It renders the site and uses [lychee](https://github.com/lycheeverse/lychee) to check all HTML links, failing the workflow if any broken links are found.
+
 ### Setup
 
 Two GitHub Actions secrets are required:
