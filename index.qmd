@@ -1,5 +1,5 @@
 ---
-title: "Cal Adapt technical and scientific guidance for working with climate data "
+title: "Cal-Adapt Scientific Guidance for working with Climate Data"
 citation: false
 format:
   html:
@@ -15,7 +15,7 @@ listing:
       categories: [Announcement]
 ---
 
-Subtitle here
+Cal-Adapt features tools to explore climate projections, historical data, global warming levels, and vetted methodologies, all geared toward supporting informed decision making across sectors and utilizing the best available climate science.
 
 ## Recent Announcements
 
