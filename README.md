@@ -19,3 +19,28 @@ quarto render
 ```
 
 Output is written to `_site/`.
+
+## Deployment
+
+The site deploys automatically to Netlify via GitHub Actions (`.github/workflows/deploy.yml`):
+
+- **Push to `main`** → deploys to production
+- **Open a PR** → Netlify builds a preview URL and posts it as a comment on the PR
+
+### Setup
+
+Two GitHub Actions secrets are required:
+
+| Secret | Where to get it |
+|---|---|
+| `NETLIFY_AUTH_TOKEN` | Netlify → User settings → Applications → Personal access tokens |
+| `NETLIFY_SITE_ID` | Netlify → Site settings → General → Site ID |
+
+Add them at: **GitHub repo → Settings → Secrets and variables → Actions**
+
+Or via the CLI:
+
+```bash
+gh secret set NETLIFY_AUTH_TOKEN --body "your-token"
+gh secret set NETLIFY_SITE_ID --body "your-site-id"
+```
