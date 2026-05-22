@@ -9,16 +9,6 @@ website:
   open-graph: true
   navbar:
     left:
-      - text: Uncertainty
-        menu:
-          - href: uncertainty/index.qmd
-            text: Overview
-          - href: uncertainty/model_uncertainty.qmd
-            text: Model Uncertainty
-          - href: uncertainty/scenario_uncertainty.qmd
-            text: Scenario Uncertainty
-          - href: uncertainty/internal_variability.qmd
-            text: Internal Variability
       - href: glossary.qmd
         text: Glossary
       - href: blog/index.qmd
